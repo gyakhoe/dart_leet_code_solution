@@ -1,24 +1,3 @@
-// List<int> productExceptSelf(List<int> nums) {
-//   int n = nums.length;
-//   List<int> answers = List.filled(n, 1);
-
-//   // Calculating the prefix
-//   int prefixProduct = 1;
-//   for (int i = 0; i < n; i++) {
-//     answers[i] = prefixProduct;
-//     prefixProduct = prefixProduct * nums[i];
-//   }
-
-//   // calculate the suffix product and combine with prefix
-//   int sufiProduct = 1;
-//   for (int i = n - 1; i >= 0; i--) {
-//     answers[i] *= sufiProduct;
-//     sufiProduct *= nums[i];
-//   }
-
-//   return answers;
-// }
-
 List<int> productExceptSelf(List<int> nums) {
   final n = nums.length;
   List<int> answers = List.filled(n, 1);
